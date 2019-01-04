@@ -6,7 +6,8 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts-ts": "3.1.0",
-    "react-toolbox": "^2.0.0-beta.13"
+    "react-toolbox": "^2.0.0-beta.13",
+    "webpack-dev-server": "^3.1.11"
   },
   "scripts": {
     "dev": "react-scripts-ts start | react-scripts-ts test --env=jsdom",
