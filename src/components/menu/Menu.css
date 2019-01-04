@@ -1,0 +1,32 @@
+.Menu-logo {
+    height: 40px;
+}
+
+.Menu-header {
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.Menu-header > div {
+    display: flex;
+}
+
+.Menu-title {
+    font-size: 1.2em;
+    white-space: nowrap;
+}
+
+.Menu-toolbar{
+    flex-direction: row;
+    align-items: center;
+}
+
+.Menu-toolbar > div {
+    padding: 4px 4px;
+    white-space: nowrap;
+}

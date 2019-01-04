@@ -1,0 +1,31 @@
+.Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Separator {
+    width: 100%;
+}
+
+.Center{
+    text-align: center;
+}
+
+.Screen{
+    width: 100vw;
+    height: 100vh;
+}
+
+.Sticky{
+    position: sticky;
+    top: -1px;
+}
+
+  

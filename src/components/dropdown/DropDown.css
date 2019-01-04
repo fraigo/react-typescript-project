@@ -1,0 +1,28 @@
+.DropDown{
+    transition: linear .2s;
+    cursor: pointer;
+    border: 1px solid rgba(128,128,128,0.0);
+}
+
+.DropDown:hover{
+    border: 1px solid rgba(128,128,128,0.2);
+}
+
+.DropDown-content {
+    transition: linear .3s;
+    opacity: 0;
+    position: absolute;
+    margin-top: 12px;
+    background-color: var(--back);
+    color: var(--primary);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.DropDown-opened > .DropDown-content {
+    opacity: 1;
+}
+
+.DropDown-content > div {
+    display: block;
+    padding: 8px;
+}
