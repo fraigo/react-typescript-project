@@ -1,5 +1,6 @@
 {
   "name": "video-editor",
+  "homepage" : "https://fraigo.github.io/react-typescript-project/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
