@@ -1,0 +1,70 @@
+
+.Theme-default {
+    --pri: #000;
+    --sec: #888;
+    --lig: #CCC;
+    --bac: #FFF;
+}
+  
+.Theme-black {
+    --pri: #FFF;
+    --sec: #AAA;
+    --lig: #444;
+    --bac: #000;
+}
+
+.Theme-lime {
+    --pri: rgb(17, 100, 59);
+    --sec: rgb(227, 243, 78);
+    --lig: rgb(107, 185, 107);
+    --bac: rgb(202, 240, 200);
+}
+
+.Theme-vivid {
+    --pri: rgb(19, 53, 146);
+    --sec: rgb(226, 255, 72);
+    --lig: rgb(148, 176, 208);
+    --bac: rgb(238, 241, 248);
+}
+
+.Theme-classic {
+    --pri: rgb(134, 15, 15);
+    --sec: rgb(206, 92, 36);
+    --lig: rgb(245, 201, 201);
+    --bac: rgb(247, 247, 247);
+}
+
+.Theme {
+    --primary: var(--pri);
+    --secondary: var(--sec);
+    --light: var(--lig);
+    --back: var(--bac);
+}
+
+body{
+    background-color: var(--back);
+    color: var(--primary);
+}
+
+.Color-secondary{
+    color: var(--secondary);
+}
+
+.Color-primary{
+    color: var(--primary);
+}
+
+.Color-light{
+    color: var(--light);
+}
+
+
+.Dark {
+    background-color: var(--pri) !important;
+    color: var(--bac) !important;
+}
+  
+.Light {
+    background-color: var(--lig) !important;
+    color: var(--pri) !important;
+}
