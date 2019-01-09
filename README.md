@@ -12,7 +12,7 @@ A Starter project for a React/Typescript Frontent Project
 
 ## Demo
 
-See [https://fraigo.github.io/react-typescript-project/build/](https://fraigo.github.io/react-typescript-project/build/)
+See [https://fraigo.github.io/react-typescript-project/](https://fraigo.github.io/react-typescript-project/)
 
 
 
