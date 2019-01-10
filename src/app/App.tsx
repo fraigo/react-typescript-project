@@ -1,6 +1,7 @@
 import * as React from 'react';
 import logo from '../assets/images/logo.svg';
 import DropDown from '../components/dropdown/DropDown';
+import LoginButton from '../components/login/Button';
 import Menu from '../components/menu/Menu';
 import './css/Animations.css';
 import './css/App.css';
@@ -13,6 +14,7 @@ export interface IProps {
 
 interface IState {
   currentTheme: string;
+  currentUser: any;
 }
 
 class App extends React.Component<IProps, IState> {
@@ -29,6 +31,7 @@ class App extends React.Component<IProps, IState> {
     super(props);
     this.state = {
       currentTheme : this.props.theme ? this.props.theme : 'vivid',
+      currentUser : {}
     }
   }
 
@@ -50,6 +53,12 @@ class App extends React.Component<IProps, IState> {
     this.setTheme(this.state.currentTheme)
   }
 
+  public onLogin = (user: any) => {
+    this.setState({
+      currentUser : user
+    })
+  }
+
   public render() {
     const themeSelection = {}
     {this.themes.map(item => (
@@ -63,10 +72,14 @@ class App extends React.Component<IProps, IState> {
               <div key={item.name} onClick={ this.changeTheme(item.name) } >{item.title}</div>
             ))}
           </DropDown>
+          <LoginButton onLogin={this.onLogin}>Log In</LoginButton>
         </Menu>
         <div className="App-content">
           <p className="Center">
             To get started, edit <code className="Color-secondary">src/app/App.tsx</code> and save to reload.
+          </p>
+          <p className="Center">
+            {this.state.currentUser.name}
           </p>
 
         </div>

@@ -1,0 +1,9 @@
+.Button {
+    cursor: pointer;
+}
+
+.Button-image {
+    height: 40px;
+    border-radius: 99% 99%;
+    background-color: #fff;
+}
