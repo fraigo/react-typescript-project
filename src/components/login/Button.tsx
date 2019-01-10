@@ -45,6 +45,8 @@ class Button extends React.Component<IProps, IState> {
         if (this.props.onLogin){
             this.props.onLogin(user)
         }
+    },() =>{
+        // no action
     })
   }
 
