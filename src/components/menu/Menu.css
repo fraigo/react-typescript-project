@@ -1,24 +1,35 @@
-.Menu-logo {
-    height: 40px;
+
+
+.Menu-wrap {
+    flex-wrap: wrap;
 }
 
-.Menu-header {
-    height: 40px;
+.Menu-component {
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: var(--light);
     color: var(--primary);
+    flex-flow: wrap;
 }
 
-.Menu-header > div {
+.Menu-logo {
+    height: 40px;
+}
+
+
+.Menu-component > div {
     display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .Menu-title {
     font-size: 1.2em;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .Menu-toolbar{

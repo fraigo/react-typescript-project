@@ -21,8 +21,8 @@ class App extends React.Component<IProps, IState> {
     {name:'default',title:'Default'},
     {name:'vivid',title:'Vivid'},
     {name:'lime',title:'Lime'},
-    {name:'black',title:'Black'},
-    {name:'classic',title:'Classic'}
+    {name:'classic',title:'Classic'},
+    {name:'black',title:'Black'}
   ]
 
   constructor(props: IProps){
@@ -57,7 +57,7 @@ class App extends React.Component<IProps, IState> {
     ))}
     return (
       <div className={this.appClass}>
-        <Menu title="React App" logo={logo} className="Dark">
+        <Menu title="React App" logo={logo} className="Dark Menu-wrap">
           <DropDown caption="Themes">
             {this.themes.map(item => (
               <div key={item.name} onClick={ this.changeTheme(item.name) } >{item.title}</div>
